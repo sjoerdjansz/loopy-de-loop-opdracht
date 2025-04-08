@@ -173,9 +173,17 @@ const employees = [
     {firstName: 'Otis', lastName: 'Kuiper'},
 ];
 
+for (let i = 0; i < employees.length; i++) {
+    employees[i]["email"] = `${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`;
+}
+console.log(employees);
+
 // ==========================================
 // Opdracht 6 (BONUS). Bob wil dat alle e-mailadressen in kleine letters worden opgeslagen, zodat ze consistent zijn.
 // Kun je je script aanpassen om dit voor elkaar te krijgen? Dit heb je nog niet geleerd, maar Google is your best friend...
 // ==========================================
 
-
+for (let i = 0; i < employees.length; i++) {
+    employees[i]["email"] = `${employees[i].firstName.toLowerCase()}.${employees[i].lastName.toLowerCase()}@loop-it-solutions.nl`;
+}
+console.log(employees);
