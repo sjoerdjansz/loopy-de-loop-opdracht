@@ -93,7 +93,7 @@ console.log(leaveHours);
 const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
 
 for (let i = 0; i < productionCodes.length; i++) {
-    productionCodes[i] = productionCodes[i].trim(" ").toUpperCase();
+    productionCodes[i] = productionCodes[i].trim().toUpperCase();
 }
 
 console.log(productionCodes);
